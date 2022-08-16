@@ -95,7 +95,6 @@ export default function LotteryEntrance() {
 
     return (
         <div className="p-5">
-            Hi from lottery entrance!
             {raffleAddress ? (
                 <div>
                     <button
@@ -114,7 +113,9 @@ export default function LotteryEntrance() {
                             <div>Enter Raffle</div>
                         )}
                     </button>
-                    <div>Entrance fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH</div>
+                    <div className="mt-4">
+                        Entrance fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
+                    </div>
                     <div>Number of players: {numPlayers}</div>
                     <div>Recent winner: {recentWinner}</div>
                 </div>
